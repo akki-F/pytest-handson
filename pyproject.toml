@@ -1,0 +1,7 @@
+[tool.pytest.ini_options]
+markers = [
+    "slow: marks tests as slow running",
+    "smoke: marks tests as smoke tests",
+    "integration: marks tests as integration tests",
+    "custom_mark: marks tests with custom mark",
+]

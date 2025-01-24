@@ -16,7 +16,15 @@
                 ],
                 "python.analysis.extraPaths": [
                     "/workspace"
-                ]
+                ],
+                "python.formatting.provider": "black",
+                "python.formatting.blackPath": "/usr/local/bin/black",
+                "editor.formatOnSave": true,
+                "editor.formatOnPaste": false,
+                "[python]": {
+                    "editor.formatOnSave": true,
+                    "editor.defaultFormatter": "ms-python.python"
+                }
             },
             "extensions": [
                 "ms-python.python",

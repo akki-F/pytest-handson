@@ -32,5 +32,13 @@
             ]
         }
     },
+    "containerEnv": {
+        "HTTP_PROXY": "${localEnv:HTTP_PROXY}",
+        "HTTPS_PROXY": "${localEnv:HTTPS_PROXY}",
+        "NO_PROXY": "${localEnv:NO_PROXY}",
+        "http_proxy": "${localEnv:HTTP_PROXY}",
+        "https_proxy": "${localEnv:HTTPS_PROXY}",
+        "no_proxy": "${localEnv:NO_PROXY}"
+    },
     "postCreateCommand": "pip install -r requirements.txt"
 }

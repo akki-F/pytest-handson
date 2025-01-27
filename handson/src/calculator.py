@@ -11,4 +11,11 @@ class Calculator:
         return x * y
 
     def divide(self, x, y):
-        return x /   y
+        return x / y
+
+    def complex_operation(self, value):
+        if not isinstance(value, (int, float)):
+            raise TypeError("Input must be a number")
+        if value < 0:
+            raise ValueError("Value must be positive")
+        return value * 2

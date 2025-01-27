@@ -1,2 +1,9 @@
 pytest==7.4.0
 pytest-cov==4.1.0
+pytest-mock==3.11.1
+pytest-asyncio==0.21.1
+pytest-dependency==0.5.1
+pytest-parallel==0.1.1
+pytest-html==3.2.0
+hypothesis==6.75.3
+black==23.7.0

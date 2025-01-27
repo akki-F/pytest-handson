@@ -38,6 +38,7 @@ class TestCalculatorExceptions:
             calc.add("1", 2)
         assert "Invalid input" in str(excinfo.value)
 
+class TestAdvancedExceptions:
     def test_exception_attributes(self):
         calc = Calculator()
         with pytest.raises(ValueError) as excinfo:

@@ -2,7 +2,12 @@
     "name": "Python Test Environment",
     "build": {
         "dockerfile": "Dockerfile",
-        "context": ".."
+        "context": "..",
+        "args": {
+            "HTTP_PROXY": "${localEnv:HTTP_PROXY}",
+            "HTTPS_PROXY": "${localEnv:HTTPS_PROXY}",
+            "NO_PROXY": "${localEnv:NO_PROXY}"
+        }
     },
     "customizations": {
         "vscode": {
